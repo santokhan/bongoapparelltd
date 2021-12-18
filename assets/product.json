@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "image": "SkinnyFitStretchMeshPolo.jpg",
+    "category": "LEVI'S",
+    "name": "Skinny Fit Stretch Mesh Polo",
+    "price": 500
+  },
+  {
+    "id": 2,
+    "image": "RelaxedFitCottonShirt.jpg",
+    "category": "GUESS",
+    "name": "Relaxed Fit Cotton Shirt",
+    "price": 455
+  },
+  {
+    "id": 3,
+    "image": "ViscoseCashmereScarf.jpg",
+    "category": "LACOSTE",
+    "name": "Viscose Cashmere Scarf",
+    "price": 420
+  },
+  {
+    "id": 4,
+    "image": "TailoredFitMeshPanelPolo.jpg",
+    "category": "POLO",
+    "name": "Tailored Fit Mesh Panel Polo",
+    "price": 280
+  },
+  {
+    "id": 5,
+    "image": "SlimFitCottonOxfordShirt.jpg",
+    "category": "LEVI'S",
+    "name": "Slim Fit Cotton Oxford Shirt",
+    "price": 500
+  },
+  {
+    "id": 6,
+    "image": "TailoredFitMeshPanelPolo.jpg",
+    "category": "ZARA",
+    "name": "Tailored Fit Mesh-Panel Polo",
+    "price": 200
+  },
+  {
+    "id": 7,
+    "image": "PremierCroppedSkinnyJean.jpg",
+    "category": "GAP",
+    "name": "Premier Cropped Skinny Jean",
+    "price": 460
+  },
+  {
+    "id": 8,
+    "image": "PlaidCottonOxfordShirt.jpg",
+    "category": "LEVI'S",
+    "name": "Plaid Cotton Oxford Shirt",
+    "price": 390
+  },
+  {
+    "id": 9,
+    "image": "DouglasCalfskinBuckleBelt.jpg",
+    "category": "LEVI'S",
+    "name": "Douglas Calfskin Buckle Belt",
+    "price": 420
+  },
+  {
+    "id": 10,
+    "image": "HeritageSunglasses.jpg",
+    "category": "ZARA",
+    "name": "Heritage Sunglasses",
+    "price": 200
+  },
+  {
+    "id": 11,
+    "image": "VachettaSaharaDuffelBag.jpg",
+    "category": "LEVI'S",
+    "name": "Vachetta Sahara Duffel Bag",
+    "price": 260
+  },
+  {
+    "id": 12,
+    "image": "RalphCoffeeHat.jpg",
+    "category": "LEVI'S",
+    "name": "Ralph Coffee Hat",
+    "price": 290
+  },
+  {
+    "id": 13,
+    "image": "RoundedCatEyeSunglasses.jpg",
+    "category": "POLO",
+    "name": "Rounded Cat Eye Sunglasses",
+    "price": 460
+  },
+  {
+    "id": 14,
+    "image": "SaffianoLeatherBelt.jpg",
+    "category": "LACOSTE",
+    "name": "Saffiano Leather Belt",
+    "price": 350
+  },
+  {
+    "id": 15,
+    "image": "SilkPolka-DotScarf.jpg",
+    "category": "GUESS",
+    "name": "Silk Polka-Dot Scarf",
+    "price": 280
+  },
+  {
+    "id": 16,
+    "image": "WovenShieldSunglasses.jpg",
+    "category": "GUESS",
+    "name": "Woven Shield Sunglasses",
+    "price": 410
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "short_name": "Bongo Apparel",
+  "name": "Bongo Apparel Limited",
+  "description": "We are providing best service for garments accessories.",
+  "icons": [
+    {
+      "src": "manifest/icons-vector.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "manifest/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "manifest/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.php",
+  "background_color": "#ececec",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ececec",
+  "shortcuts": [
+    {
+      "name": "Bongo Apparel Ltd",
+      "short_name": "Bongo Apparel",
+      "description": "Order you favorite garments accessories.",
+      "url": "/bongoapparel?source=pwa",
+      "icons": [{ "src": "manifest/bongoapparel.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Bongo Apparel Ltd",
+      "short_name": "Bongo Apparel",
+      "description": "Order you favorite garments accessories.",
+      "url": "/bongoapparel?source=pwa",
+      "icons": [{ "src": "manifest/bongoapparel.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "manifest/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "manifest/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
+}
