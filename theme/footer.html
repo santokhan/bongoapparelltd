@@ -1,39 +1,3 @@
-<?php
-$f_link = array(
-    array(
-        "title" => "get to know us",
-        "link" => array("careers", "blog", "about bongo apparel", "investor relations", "FAQ")
-    ),
-    array(
-        "title" => "buy with us",
-        "link" => array("services", "contact Us", "privacy policy", "cookie policy", "terms and conditions")
-    ),
-    array(
-        "title" => "categories",
-        "link" => array("women", "men", "accessories", "new arrivals", "clearance")
-    )
-);
-
-
-
-/** Loop for unordered list
- * Pass items array as a parameter
- * Call this function inside of your target <ul></ul>
- */
-function nav_box(array $arr)
-{
-?>
-    <div class="nav_title"><?= strtoupper($arr["title"]) ?></div>
-    <ul class="list-unstyled">
-        <?php foreach ($arr["link"] as $link) : ?>
-            <li class="py-2"><a class="link text-decoration-none" href="<?= strtok($link, " ") ?>.php"><?= ucwords($link) ?></a></li>
-        <?php endforeach ?>
-    </ul>
-<?php
-}
-?>
-
-
 <footer class="footer pt-3 pt-md-5">
     <div class="container-fluid">
         <div class="row bg-white">
@@ -64,14 +28,41 @@ function nav_box(array $arr)
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <div class="container">
             <div class="row py-3 pt-md-5 pb-md-4">
-                <div class="col-12 col-sm-6 col-xl-3"><?php nav_box($f_link[0]) ?></div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="nav_title">GET TO KNOW US</div>
+                    <ul class="list-unstyled">
+                        <li class="py-2"><a class="link text-decoration-none" href="careers.php">Careers</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="blog.php">Blog</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="about.php">About Bongo Apparel</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="investor.php">Investor Relations</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="FAQ.php">FAQ</a></li>
+                    </ul>
+                </div>
 
-                <div class="col-12 col-sm-6 col-xl-3"><?php nav_box($f_link[1]) ?></div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="nav_title">BUY WITH US</div>
+                    <ul class="list-unstyled">
+                        <li class="py-2"><a class="link text-decoration-none" href="services.php">Services</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="contact.php">Contact Us</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="privacy.php">Privacy Policy</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="cookie.php">Cookie Policy</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="terms.php">Terms And Conditions</a></li>
+                    </ul>
+                </div>
 
-                <div class="col-12 col-sm-6 col-xl-3"><?php nav_box($f_link[2]) ?></div>
+                <div class="col-12 col-sm-6 col-xl-3">
+                    <div class="nav_title">CATEGORIES</div>
+                    <ul class="list-unstyled">
+                        <li class="py-2"><a class="link text-decoration-none" href="product.php?category=women">Women</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="product.php?category=men">Men</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="product.php?category=accessories">Accessories</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="product.php?category=new">New Arrivals</a></li>
+                        <li class="py-2"><a class="link text-decoration-none" href="product.php?category=clearance">Clearance</a></li>
+                    </ul>
+                </div>
 
                 <div class="col-12 col-sm-6 col-xl-3">
                     <h4 class="nav_title">Let Us Help You</h4>
@@ -95,7 +86,7 @@ function nav_box(array $arr)
                 <div class="copyright">
                     <span>Copyright @2010-21 All Right Reserved. Developer</span>
                     <a class="developer" href="https://santokhan.github.io" target="_blank" rel="noreferrer">
-                        <span>Santo</span><span class="d-none d-xl-inline"> >></span>
+                        <span>Santo</span><span class="d-none d-xl-inline"> &gt;&gt;</span>
                     </a>
                 </div>
             </div>
@@ -122,9 +113,12 @@ function nav_box(array $arr)
     </div>
 </footer>
 
+
 <button class="scroll-to-top" id="scrollToTop">
     <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.27942 0.748845C7.67282 0.340012 8.32718 0.340012 8.72058 0.748845L15.0308 7.30662C15.6421 7.94193 15.1919 9 14.3102 9H1.68977C0.808114 9 0.357875 7.94193 0.969197 7.30662L7.27942 0.748845Z" fill="#555555" />
+        <path
+            d="M7.27942 0.748845C7.67282 0.340012 8.32718 0.340012 8.72058 0.748845L15.0308 7.30662C15.6421 7.94193 15.1919 9 14.3102 9H1.68977C0.808114 9 0.357875 7.94193 0.969197 7.30662L7.27942 0.748845Z"
+            fill="#555555" />
     </svg>
 </button>
 
