@@ -1,0 +1,240 @@
+:root {
+  --default-color: #555555;
+}
+footer.footer {
+  font-family: "Poppins", sans-serif;
+  color: var(--default-color);
+  /* padding: 0.5rem 1rem; */
+}
+
+/* Footer Top */
+footer.footer .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0 2rem 1rem;
+}
+.footer .location {
+  margin: 1rem 0;
+}
+footer.footer .copyright {
+  color: var(--default-color);
+  font-size: 0.9rem;
+  padding: 0;
+}
+.footer .middle {
+  padding: 1rem 0;
+}
+.footer .nav_grid {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 1.25rem;
+}
+.footer .nav_box {
+  padding: 1rem 0 0 0;
+}
+.footer .nav_title {
+  color: #0f1111;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer .nav_grid ul {
+  padding: 0;
+}
+.footer .nav_grid ul li {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+.footer .link {
+  text-decoration: none;
+  color: var(--default-color);
+  /* border: 0.25px solid transparent; */
+  padding: 0;
+  margin: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  position: relative;
+}
+.footer .link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--default-color);
+  border-radius: 2px;
+  left: 0;
+  top: 100%;
+  transition: 0.4s ease-out;
+}
+.footer .link:hover::after {
+  width: 100%;
+}
+.footer .address {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+/* Footer bottom */
+.footer .developer {
+  color: #0f1111;
+  text-decoration: none;
+  position: relative;
+}
+.footer .developer::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--default-color);
+  left: 0;
+  top: 100%;
+  transition: 0.4s ease-out;
+}
+.footer .developer:hover::after {
+  width: 100%;
+}
+
+/* copyright section footer bottom */
+.footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start !important;
+  padding: 2rem 0;
+}
+.footer .payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.footer .drag-item {
+  border-radius: 0.25rem;
+}
+.footer .payment .getway {
+  width: 20%;
+  object-fit: contain;
+  padding: 0.25rem;
+}
+
+/* Scroll top button */
+.scroll-to-top {
+  /* styling onclick scrolltop button to auto scroll website */
+  background-color: white;
+  border: 1px solid #555;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  position: fixed;
+  width: 40px !important;
+  height: 40px !important;
+  max-height: 48px;
+  max-width: 48px;
+  bottom: 8px;
+  left: calc(50% - 24px);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  transition: 0.25s ease-in-out;
+  z-index: 10;
+}
+.scroll-to-top > svg {
+  z-index: -1;
+}
+.scroll-to-top:hover {
+  transform: scale(0.9);
+}
+
+@media (min-width: 576px) {
+  /* copyright section
+  * Payment getway */
+  .footer .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    padding: 1rem;
+  }
+  .footer .payment {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer .payment .getway {
+    width: 64px;
+    object-fit: contain;
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer.footer {
+    /* max-width: 1170px; */
+    /* margin: 3rem auto 0 auto; */
+    padding: 0;
+  }
+  .footer .middle {
+    max-width: 1170px;
+    margin: 0 auto 0 auto;
+  }
+  .footer .nav_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.25rem;
+  }
+  .footer .nav_box {
+    padding: 0;
+  }
+  .footer .header {
+    margin: 3rem 0 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .footer .location {
+    margin: 0;
+  }
+
+  /* copyright section
+  * Payment getway */
+  .footer .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    justify-items: flex-start;
+    padding: 1rem;
+  }
+  .footer .payment {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .footer .payment .getway {
+    width: 64px;
+    object-fit: contain;
+    padding: 0.25rem;
+  }
+
+  /* Extra */
+  .scroll-to-top {
+    /* styling onclick scrolltop button to auto scroll website */
+    position: fixed;
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px;
+    max-height: 48px;
+    display: none;
+    padding-bottom: 0.25rem;
+    z-index: 10;
+  }
+  .scroll-to-top > svg {
+    z-index: -1;
+  }
+}

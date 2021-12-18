@@ -1,0 +1,264 @@
+:root {
+  --default-bg: #ececec;
+  --default-text: #555;
+  --default-dark: #0f1111;
+  --poppins: "Poppins", sans-serif;
+}
+
+/** Grid item of overview
+* Women
+* Men
+* Othes 
+* apparel is common class to them*/
+.main .overview {
+  font-family: var(--poppins);
+  padding: 1rem 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.main .apparel {
+  border: 0.25px groove rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); */
+  padding: 0;
+  border-radius: 0.75rem;
+  position: relative;
+  background-color: #ffffff;
+  /* background-color: #ffffff35; */
+  backdrop-filter: blur(4px);
+  box-shadow: 4px 4px 16px #0e0c0c1a;
+}
+
+/* Rainbow Color */
+.color {
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  filter: blur(20px);
+  z-index: 0;
+  transform: rotate(-33.3deg);
+}
+.color > .label-1 {
+  background: #ffb5b5;
+  top: -18%;
+  left: 0;
+}
+.color > .label-2 {
+  background: #b1fffa;
+  top: -18%;
+  left: 30%;
+}
+.color > .label-3 {
+  background: #cab1ff;
+  top: -18%;
+  left: 60%;
+}
+
+.blur-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  background: linear-gradient(45deg, #f7d7d7, transparent);
+  /* filter: blur(10px); */
+  border-radius: 50%;
+  left: 80px;
+  top: 119px;
+}
+.blur-circle-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  max-width: 150px;
+  background: linear-gradient(45deg, #f7d7d7, transparent);
+  /* filter: blur(10px); */
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+}
+
+.main .apparel .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  color: var(--default-text);
+  font-weight: 600;
+}
+
+/* image */
+.main .apparel .example {
+  width: 100%;
+  /* height: 320px; */
+  object-fit: contain;
+}
+
+.main .apparel .list {
+  list-style: none;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.main .apparel .list .item {
+  padding: 0.25rem 0;
+  margin: 0;
+}
+
+.main .apparel .fa-tags {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 0 0.5rem 0 0;
+}
+
+/* Category link */
+.main .apparel .list .item .link {
+  text-decoration: none;
+  color: var(--default-text);
+  /* color: #202124; */
+  text-transform: capitalize;
+}
+
+.main .apparel .list .item .link:hover {
+  color: var(--default-dark);
+}
+
+.main .apparel .link:hover > .fa-tags {
+  color: var(--default-text);
+}
+
+.main .apparel .see-all {
+  /*
+  background-color: #202124;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1.25rem;
+  */
+  text-decoration: none;
+}
+
+.main .apparel .anchor {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* ___________________Product Topper___________________
+* Filter buttons on product page
+* filter.php */
+.main .product-topper .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 1.5rem 0;
+  overflow: auto;
+}
+
+.main .product-topper::-webkit-scrollbar {
+  display: none;
+}
+
+.main .product-topper .header .filter-btn {
+  position: relative;
+  padding: 0.25rem 1rem;
+  margin: 0 0.25rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: #555555;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.25s ease-in;
+  white-space: nowrap;
+}
+
+.main .product-topper .header .filter-btn:hover {
+  padding: 0.25 1rem;
+  border: 1px solid #555555;
+  /* color: #1f1111; */
+}
+
+/** Category Section */
+.main .category {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: #0f1111;
+  /* display: grid; */
+  display: none;
+  grid-template-columns: auto;
+  gap: 1.25rem;
+}
+
+.main .category .item {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.main .category .p_header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.main .category .link {
+  color: #202124;
+}
+
+@media (min-width: 768px) {
+  .main .overview {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+    position: relative;
+  }
+
+  .main .apparel .example {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+  }
+
+  .main .category {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    background-color: #0f1111;
+    /* display: grid; */
+    display: none;
+    grid-template-columns: auto auto auto;
+    gap: 1.25rem;
+  }
+
+  /* ___________________Product Topper___________________
+    * Filter buttons on product page
+    * filter.php
+     */
+  .main .product-topper .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+    overflow: auto;
+  }
+
+  .color > .label-1 {
+    top: -20%;
+    left: 25%;
+  }
+  .color > .label-2 {
+    top: -20%;
+    left: 45%;
+  }
+  .color > .label-3 {
+    top: -20%;
+    left: 65%;
+  }
+}

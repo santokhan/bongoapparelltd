@@ -1,0 +1,45 @@
+/* padding: 0.5rem 1.5rem; in xl screen */
+.google,
+.facebook,
+.twitter {
+  padding: 0.5rem 1rem;
+  background-color: #efefef;
+  border-radius: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  filter: brightness(100%);
+  transition: filter 0.25s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: 0.25px solid rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.google:hover,
+.facebook:hover,
+.twitter:hover {
+  color: #ffffff;
+  filter: brightness(80%);
+}
+
+.google {
+  background-color: #db4437;
+}
+
+.facebook {
+  background-color: #4267b2;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+/* Don't take any color and background color in media queries */
+@media (min-width: 768px) {
+  /* padding: 0.5rem 1rem; in sm screen */
+  .google,
+  .facebook,
+  .twitter {
+    padding: 0.5rem 1.5rem;
+  }
+}

@@ -1,0 +1,104 @@
+.main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  color: #0f1111;
+  padding: 2rem 1rem;
+}
+.main .section {
+  /* border: 0.25px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  /* background-color: #232f3e; */
+  background-color: #fff;
+}
+.main .cart-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.main .section .grid-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+.main .section .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
+}
+.coupon {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.coupon input[type="Text"] {
+  padding: 0.25rem;
+  margin: 0;
+  font-size: 0.75rem;
+  outline: none;
+  border-radius: 0.5rem;
+}
+.coupon button[type="submit"] {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+/* every row of additional services */
+.main .a-s-row {
+  padding: 1rem 0;
+}
+
+/* Devlivery Section */
+.delivery-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.delivery-services > .way {
+  /* border: 0.25px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: rgb(233, 227, 227);
+  display: grid;
+  grid-template-columns: 72px auto auto;
+  align-items: center;
+}
+.delivery-services .way-des {
+  padding: 0 1rem;
+}
+.delivery-services .exp {
+  font-size: 0.75rem;
+}
+.delivery-services .in-radio {
+  display: flex;
+  justify-content: flex-end;
+}
+.delivery-services .in-radio input[type="radio"] {
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  /* Devlivery Section */
+  .delivery-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

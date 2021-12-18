@@ -1,0 +1,36 @@
+body {
+  /*
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #0f1111; 
+  */
+  background: #ececec url("../bg-texture-00.svg");
+  padding: 0;
+  margin: 0;
+}
+
+.app_header {
+  height: 56px;
+}
+
+.counter {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  right: -3px;
+  top: -6px;
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px #00000080;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background: #353535 url("../bg-texture-00.svg");
+  }
+}
+*/
